@@ -26,9 +26,3 @@ CREATE TABLE employee (
     FOREIGN KEY (manager_id) REFERENCES employee(id) ON DELETE SET NULL
 );
 
--- SELECT
---     employee.*, role.title AS emp_title
--- FROM 
---     employee
--- LEFT JOIN role ON 
---     employee.fk_role_id = role.id;
